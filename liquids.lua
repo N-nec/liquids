@@ -1,7 +1,7 @@
 --MILK ------------------------------------------------------------------------
 
 
-minetest.register_node("default:milk_", {
+minetest.register_node("liquid:milk_", {
         description = S("Milk_"),
         drawtype = "liquid",
         waving = 3,
@@ -37,15 +37,15 @@ minetest.register_node("default:milk_", {
         drop = "",
         drowning = 1,
         liquidtype = "source",
-        liquid_alternative_flowing = "default:milk_flowing",
-        liquid_alternative_source = "default:milk_",
+        liquid_alternative_flowing = "liquid:milk_flowing",
+        liquid_alternative_source = "liquid:milk_",
         liquid_viscosity = 1,
         post_effect_color = {a = 103, r = 30, g = 60, b = 90},
         groups = {water = 3, liquid = 3, cools_lava = 1},
         sounds = default.node_sound_water_defaults(),
 })
 
-minetest.register_node("default:milk_flowing", {
+minetest.register_node("liquid:milk_flowing", {
         description = S("Flowing Milk"),
         drawtype = "flowingliquid",
         waving = 3,
@@ -84,8 +84,8 @@ minetest.register_node("default:milk_flowing", {
         damage_per_second = 0,
         drowning = 1,
         liquidtype = "flowing",
-        liquid_alternative_flowing = "default:milk_flowing",
-        liquid_alternative_source = "default:milk_",
+        liquid_alternative_flowing = "liquid:milk_flowing",
+        liquid_alternative_source = "liquid:milk_",
         liquid_viscosity = 1,
         post_effect_color = {a = 103, r = 30, g = 60, b = 90},
         groups = {water = 3, liquid = 3, not_in_creative_inventory = 1,
@@ -96,7 +96,7 @@ minetest.register_node("default:milk_flowing", {
 
 --SEWAGE -------------------------------------------------------------------------
 
-minetest.register_node("default:sewage", {
+minetest.register_node("liquid:sewage", {
         description = S("Poo"),
         drawtype = "liquid",
         waving = 3,
@@ -133,15 +133,15 @@ minetest.register_node("default:sewage", {
         drowning = 1,
         damage_per_second = 1 * 2,
         liquidtype = "source",
-        liquid_alternative_flowing = "default:sewage_flowing",
-        liquid_alternative_source = "default:sewage",
+        liquid_alternative_flowing = "liquid:sewage_flowing",
+        liquid_alternative_source = "liquid:sewage",
         liquid_viscosity = 1,
         post_effect_color = {a = 103, r = 30, g = 60, b = 90},
         groups = {water = 3, liquid = 3, cools_lava = 1},
         sounds = default.node_sound_water_defaults(),
 })
 
-minetest.register_node("default:sewage_flowing", {
+minetest.register_node("liquid:sewage_flowing", {
         description = S("Flowing Poo"),
         drawtype = "flowingliquid",
         waving = 3,
@@ -180,8 +180,8 @@ minetest.register_node("default:sewage_flowing", {
         damage_per_second = 1 * 2,
         drowning = 1,
         liquidtype = "flowing",
-        liquid_alternative_flowing = "default:sewage_flowing",
-        liquid_alternative_source = "default:sewage",
+        liquid_alternative_flowing = "liquid:sewage_flowing",
+        liquid_alternative_source = "liquid:sewage",
         liquid_viscosity = 1,
         post_effect_color = {a = 103, r = 30, g = 60, b = 90},
         groups = {water = 3, liquid = 3, not_in_creative_inventory = 1,
@@ -192,7 +192,7 @@ minetest.register_node("default:sewage_flowing", {
 
 --BLOOD -------------------------------------------------------------
 
-minetest.register_node("default:blood", {
+minetest.register_node("liquid:blood", {
         description = S("Blood"),
         drawtype = "liquid",
         waving = 3,
@@ -228,15 +228,15 @@ minetest.register_node("default:blood", {
         drop = "",
         drowning = 1,
         liquidtype = "source",
-        liquid_alternative_flowing = "default:blood_flowing",
-        liquid_alternative_source = "default:blood",
+        liquid_alternative_flowing = "liquid:blood_flowing",
+        liquid_alternative_source = "liquid:blood",
         liquid_viscosity = 1,
         post_effect_color = {a = 103, r = 30, g = 60, b = 90},
         groups = {water = 3, liquid = 3, cools_lava = 1},
         sounds = default.node_sound_water_defaults(),
 })
 
-minetest.register_node("default:blood_flowing", {
+minetest.register_node("liquid:blood_flowing", {
         description = S("Flowing Blood"),
         drawtype = "flowingliquid",
         waving = 3,
@@ -276,8 +276,8 @@ minetest.register_node("default:blood_flowing", {
         damage_per_second = 0,
         drowning = 1,
         liquidtype = "flowing",
-        liquid_alternative_flowing = "default:blood_flowing",
-        liquid_alternative_source = "default:blood",
+        liquid_alternative_flowing = "liquid:blood_flowing",
+        liquid_alternative_source = "liquid:blood",
         liquid_viscosity = 1,
         post_effect_color = {a = 103, r = 30, g = 60, b = 90},
         groups = {water = 3, liquid = 3, not_in_creative_inventory = 1,
