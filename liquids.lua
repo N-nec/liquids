@@ -2,7 +2,7 @@
 
 
 minetest.register_node("liquids:milk_", {
-        description = S("Milk_"),
+        description = ("Milk_"),
         drawtype = "liquid",
         waving = 3,
         tiles = {
@@ -46,7 +46,7 @@ minetest.register_node("liquids:milk_", {
 })
 
 minetest.register_node("liquids:milk_flowing", {
-        description = S("Flowing Milk"),
+        description = ("Flowing Milk"),
         drawtype = "flowingliquid",
         waving = 3,
         tiles = {"default_milk_.png"},
@@ -97,7 +97,7 @@ minetest.register_node("liquids:milk_flowing", {
 --SEWAGE -------------------------------------------------------------------------
 
 minetest.register_node("liquids:sewage", {
-        description = S("Poo"),
+        description = ("Poo"),
         drawtype = "liquid",
         waving = 3,
         tiles = {
@@ -142,7 +142,7 @@ minetest.register_node("liquids:sewage", {
 })
 
 minetest.register_node("liquids:sewage_flowing", {
-        description = S("Flowing Poo"),
+        description = ("Flowing Poo"),
         drawtype = "flowingliquid",
         waving = 3,
         tiles = {"default_sewage.png"},
@@ -193,7 +193,7 @@ minetest.register_node("liquids:sewage_flowing", {
 --BLOOD -------------------------------------------------------------
 
 minetest.register_node("liquids:blood", {
-        description = S("Blood"),
+        description = ("Blood"),
         drawtype = "liquid",
         waving = 3,
         tiles = {
@@ -237,7 +237,7 @@ minetest.register_node("liquids:blood", {
 })
 
 minetest.register_node("liquids:blood_flowing", {
-        description = S("Flowing Blood"),
+        description = ("Flowing Blood"),
         drawtype = "flowingliquid",
         waving = 3,
         tiles = {"default_blood.png"},
